@@ -43,21 +43,8 @@ const questions = [
         Answer: "B"
     }
 ]
+
 let len = questions.length;
-
-async function askUser() {
-  const rl = readline.createInterface({ input, output });
-
-  console.log
-  const name = await rl.question();
-  const age = await rl.question('How old are you? ');
-
-  console.log(`Hello ${name}, you are ${age} years old.`);
-
-  // Always close the interface when finished so the terminal exits
-  rl.close();
-}
-
 let questionsCorrect = 0;
 
 async function test() {
